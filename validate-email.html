@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    function isEmail(str) {
+      var regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+      if (regexp.test(str)) return true;
+      return false;
+    }
+    var str1 = "shaco14091999@gmail.com";
+    var str2 = "@gmail.com";
+    var str3 = "12@gmail.com";
+    var str4 = "12@gmail";
+    document.writeln(isEmail(str1));
+    document.writeln(isEmail(str2));
+    document.writeln(isEmail(str3));
+    document.writeln(isEmail(str4));
+  </script>
+</body>
+</html>
